@@ -40,4 +40,24 @@ for x in lst:
 
           
 #Program 3: Rewrite the code to handle the exceptions raised. Print appropriate error messages wherever applicable.
+try:
+  f= open("D:\\F1.txt","r")
+   str1=f.read()
+   str2=""
+   print(str)
+   for ch in str1:
+     if ch == '\"':
+          str2+= "\\"+ch
+     else:
+          str2+=ch
+   print(str2)
+   f.close()
+   f=open("D:\F2.txt","w+")
+   f.write(str2)
+   f.close()
+ 
+ except:
+    print("Some error occured")
+
+          
           
